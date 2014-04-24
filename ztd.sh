@@ -2,7 +2,7 @@
 
 if [ $# -eq 0 ]
 then
-    echo "newdo.sh todo"
+    echo "ztd.sh todo"
     exit 1
 fi
 
