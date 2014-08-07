@@ -6,10 +6,5 @@ then
     exit 1
 fi
 
-if [ -d ~/Desktop/todo ]
-then
-    touch ~/Desktop/todo/"$1"
-else
-    mkdir ~/Desktop/todo
-    touch ~/Desktop/todo/"$1"
-fi
+mkdir -p ~/Desktop/todo > /dev/null 2>&1
+touch ~/Desktop/todo/"$1"
